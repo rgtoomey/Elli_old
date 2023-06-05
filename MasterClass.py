@@ -1,4 +1,4 @@
-import ellipsometry_ver2 as elli
+import elliRoutines as elli
 import matplotlib.pyplot as plt
 import numpy as np
 import riProfiles
@@ -92,7 +92,7 @@ class Simulation:
         axs.errorbar(self.angles, imag_rho, yerr=error.imag, fmt = "none",errorevery=(1,10),ecolor=imag_line.get_color())
         real_line, = axs.plot(self.angles, real_rho, label=r"$\mathrm{Re}(\rho-\rho_0)$", linewidth=2)
         axs.errorbar(self.angles, real_rho, yerr=error.real, fmt = "none",errorevery=(5,10),ecolor=real_line.get_color())
-z
+
 
         if name_of_comparison == "none":
             pass
